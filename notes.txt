@@ -1,0 +1,16 @@
+#Discovery Notes during coding process.
+
+
+var lines = fields.Select(kvp => kvp.Key);  //Grab PDF Fields from document
+foreach (var l in lines)  //Iterate through the fields to build the set value map
+{
+    Console.WriteLine($"fields[\"{l}\"].SetValue();");
+}
+Console.WriteLine(string.Join(Environment.NewLine, lines));  //Print them out */
+
+//Prints out just the heads on CSV file using the ETL
+using (var p = new ChoCSVReader(@"C:\DEV\pdffillerdncore\data.csv").WithFirstLineHeader())
+{
+    p.Read();
+    Console.WriteLine(String.Join(", ", p.Context.Headers));
+}
