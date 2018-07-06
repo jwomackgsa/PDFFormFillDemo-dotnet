@@ -16,12 +16,13 @@ namespace pdffillerdncore
         {
             Console.WriteLine("Begin PDF Processing");
             //string srcPdf = @"resources\sf3101_template.pdf";  //Set template form as source
-            string srcPdf = @"resources\3100_new.pdf";  //Set template form as source
-            string destPdf = @"output\mergedsf3101_" + DateTime.Now.ToString("MMddyyyyHHmmss") + ".pdf";  //Set named output pdf                
+            string srcPdf = @"resources\SF1150.pdf";  //Set template form as source
+            string destPdf = @"output\mergedsf1150_" + DateTime.Now.ToString("MMddyyyyHHmmss") + ".pdf";  //Set named output pdf                
             
-            //Program.discoverPDFFields(srcPdf);
+            Program.discoverPDFFields(srcPdf);
+            //Program.testFillSF1150(srcPdf,destPdf);
             //Program.createPocoFromPDF(srcPdf);
-            Program.FixFieldNamesPDF(srcPdf);
+            //Program.FixFieldNamesPDF(srcPdf);
             //Read CSV File into POCO using ChoETL Lib
             /* 
             var recs = new ChoCSVReader<SF3101>(@"C:\DEV\pdffillerdncore\resources\sf3101_sample_data.csv").WithFirstLineHeader(); 
@@ -100,17 +101,37 @@ namespace pdffillerdncore
                 return memoryStream.ToArray();
             }
         }
+
+        private static void testFillSF1150(string srcPdf, string outPdf)
+        {
+            PdfReader reader = new PdfReader(srcPdf); //Iput
+            PdfWriter writer = new PdfWriter(outPdf); //output
+            PdfDocument pdfDoc = new PdfDocument(reader, writer);
+            PdfAcroForm form = PdfAcroForm.GetAcroForm(pdfDoc, true);
+            var fields = form.GetFormFields();
+            //PdfFormField toSet;
+            
+            fields.First(kvp => kvp.Key.Contains("SSN")).Value.SetValue("111-22-3333");
+            fields.First(kvp => kvp.Key.Contains("NAME")).Value.SetValue("Doe, John, E");
+            form.FlattenFields();
+            pdfDoc.Close();      
+
+        }
         
         private static void discoverPDFFields(string pdf)
         {
             PdfDocument pdfDoc = new PdfDocument(new PdfReader(pdf));
             PdfAcroForm form = PdfAcroForm.GetAcroForm(pdfDoc, true);
+            StreamWriter sw = new StreamWriter(@"output\fields.txt");
             var fields = form.GetFormFields();
             var lines = fields.Select(kvp => kvp.Key);  //Grab PDF Fields from document
             foreach (var l in lines)  //Iterate through the fields to build the set value map
             {
-                Console.WriteLine($"fields[\"{l}\"].SetValue();");
+                //Console.WriteLine($"fields[\"{l}\"].SetValue();");
+                sw.WriteLine(l);
+
             }
+            sw.Close();
         }
 
         private static void createPocoFromPDF(string pdf)
