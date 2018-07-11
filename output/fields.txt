@@ -1,136 +1,136 @@
-form1[0]
-form1[0].#subform[0]
-form1[0].#subform[0].DateOFSEP[0]
-form1[0].#subform[0].SSN[0]
-form1[0].#subform[0].AGENCYUSE[0]
-form1[0].#subform[0].YES[0]
-form1[0].#subform[0].NO[0]
-form1[0].#subform[0].LASTDATE[0]
-form1[0].#subform[0].NumericField1[0]
-form1[0].#subform[0].MORETHAN[0]
-form1[0].#subform[0].LESSTHAN[0]
-form1[0].#subform[0].YEARS[0]
-form1[0].#subform[0].MONTHS[0]
-form1[0].#subform[0].DAYS[0]
-form1[0].#subform[0].MONTH[0]
-form1[0].#subform[0].DAY[0]
-form1[0].#subform[0].YEAR[0]
-form1[0].#subform[0].ANNUAL[0]
-form1[0].#subform[0].SICK[0]
-form1[0].#subform[0].RESTORED[0]
-form1[0].#subform[0].MONTH2[0]
-form1[0].#subform[0].DAY2[0]
-form1[0].#subform[0].YEAR2[0]
-form1[0].#subform[0].HOURS_1[0]
-form1[0].#subform[0].SICK_1[0]
-form1[0].#subform[0].RESTORED_1[0]
-form1[0].#subform[0].TOTALA[0]
-form1[0].#subform[0].TOTALS[0]
-form1[0].#subform[0].TOTALR[0]
-form1[0].#subform[0].ANNUALREDUC[0]
-form1[0].#subform[0].SICKREDUC[0]
-form1[0].#subform[0].RESTOREDREDUC[0]
-form1[0].#subform[0].TOTALTAKEN[0]
-form1[0].#subform[0].TOTALLSICK[0]
-form1[0].#subform[0].TOTALRESTORTED[0]
-form1[0].#subform[0].BALANCEA[0]
-form1[0].#subform[0].BALANCES[0]
-form1[0].#subform[0].BALANCER[0]
-form1[0].#subform[0].TOTALAHOURS[0]
-form1[0].#subform[0].TOTALRHOURS[0]
-form1[0].#subform[0].FROMMO[0]
-form1[0].#subform[0].CTHRUMO[0]
-form1[0].#subform[0].CFROM[0]
-form1[0].#subform[0].BTHURMO[0]
-form1[0].#subform[0].BFROMMO[0]
-form1[0].#subform[0].ATHRUMO[0]
-form1[0].#subform[0].AFROMMO[0]
-form1[0].#subform[0].THURMO[0]
-form1[0].#subform[0].FROMDAY[0]
-form1[0].#subform[0].CTHRUDAY[0]
-form1[0].#subform[0].CFROMDAY[0]
-form1[0].#subform[0].BTHURDAY[0]
-form1[0].#subform[0].BFROMDAY[0]
-form1[0].#subform[0].ATHURDAY[0]
-form1[0].#subform[0].AFROMDAY[0]
-form1[0].#subform[0].THRUDAY[0]
-form1[0].#subform[0].FROMYEAR[0]
-form1[0].#subform[0].CTHRUYEAR[0]
-form1[0].#subform[0].CFROMYEAR[0]
-form1[0].#subform[0].BTHURYEAR[0]
-form1[0].#subform[0].BFROMYEAR[0]
-form1[0].#subform[0].ATHRUYEAR[0]
-form1[0].#subform[0].AFROMYEAR[0]
-form1[0].#subform[0].THRUYEAR[0]
-form1[0].#subform[0].HOURS1[0]
-form1[0].#subform[0].HOURS8[0]
-form1[0].#subform[0].HOURS7[0]
-form1[0].#subform[0].HOURS6[0]
-form1[0].#subform[0].HOURS5[0]
-form1[0].#subform[0].HOURS4[0]
-form1[0].#subform[0].HOURS3[0]
-form1[0].#subform[0].HOURS2[0]
-form1[0].#subform[0].NumericField2[0]
-form1[0].#subform[0].ABSENCEMONTH[0]
-form1[0].#subform[0].ABSENCEDAY[0]
-form1[0].#subform[0].ABSENCEYEAR[0]
-form1[0].#subform[0].TOTALLWOPHOURS[0]
-form1[0].#subform[0].STARTMONTH[0]
-form1[0].#subform[0].STARTYEAR[0]
-form1[0].#subform[0].STARTDAY[0]
-form1[0].#subform[0].COMPLETEYEAR[0]
-form1[0].#subform[0].COMPLETEDAY[0]
-form1[0].#subform[0].COMPLETEDATE[0]
-form1[0].#subform[0].BEGANMONTH[0]
-form1[0].#subform[0].BEGANYEAR[0]
-form1[0].#subform[0].BEGANDAY[0]
-form1[0].#subform[0].ABSENTWOPAY[0]
-form1[0].#subform[0].ACCRUALMONTH[0]
-form1[0].#subform[0].ACCRUALYEAR[0]
-form1[0].#subform[0].ACCURALDAY[0]
-form1[0].#subform[0].NUMOFDAYS[0]
-form1[0].#subform[0].ACCRUALSEPDAT[0]
-form1[0].#subform[0].DATEFROMMO[0]
-form1[0].#subform[0].DATETOYEAR4[0]
-form1[0].#subform[0].DATETODAY4[0]
-form1[0].#subform[0].DATETOMO4[0]
-form1[0].#subform[0].DATEFROMYEAR4[0]
-form1[0].#subform[0].DATEFROMDAY4[0]
-form1[0].#subform[0].DATEFROMMO4[0]
-form1[0].#subform[0].DATETOYEAR3[0]
-form1[0].#subform[0].DATETODAY3[0]
-form1[0].#subform[0].DATETOMO3[0]
-form1[0].#subform[0].DATEFROMYEAR3[0]
-form1[0].#subform[0].DATEFROMDAY3[0]
-form1[0].#subform[0].DATEFROMMO3[0]
-form1[0].#subform[0].DATETOYEAR2[0]
-form1[0].#subform[0].DATETODAY2[0]
-form1[0].#subform[0].DATETOMO2[0]
-form1[0].#subform[0].DATEFROMYEAR2[0]
-form1[0].#subform[0].DATEFROMDAY2[0]
-form1[0].#subform[0].DATEFROMMO2[0]
-form1[0].#subform[0].DATETOYEAR[0]
-form1[0].#subform[0].DATETODAY[0]
-form1[0].#subform[0].DATETOMO[0]
-form1[0].#subform[0].DATEFROMYEAR[0]
-form1[0].#subform[0].DATEFROMDAY[0]
-form1[0].#subform[0].REGMO[0]
-form1[0].#subform[0].TOREGYEAR[0]
-form1[0].#subform[0].TOREGDAY[0]
-form1[0].#subform[0].TOREGMO[0]
-form1[0].#subform[0].REGYEAR[0]
-form1[0].#subform[0].REGDAY[0]
-form1[0].#subform[0].SPECIALMO[0]
-form1[0].#subform[0].SPECIALYEAR2[0]
-form1[0].#subform[0].SPECIALDAY2[0]
-form1[0].#subform[0].SPECIALMO2[0]
-form1[0].#subform[0].SPECIALYEAR[0]
-form1[0].#subform[0].SPECIALDAY[0]
-form1[0].#subform[0].REMARKS[0]
-form1[0].#subform[0].Signature[0]
-form1[0].#subform[0].TitleAgency[0]
-form1[0].#subform[0].Date[0]
-form1[0].#subform[0].NAME[0]
-form1[0].#subform[0].SALARYRATE[0]
-form1[0].#subform[0].SignatureField1[0]
-form1[0].#subform[0].Nature[0]
+fields.First(kvp => kvp.Key.Contains("form1")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("form1.#subform")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DateOFSEP")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("SSN")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("AGENCYUSE")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("YES")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("NO")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("LASTDATE")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("NumericField1")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("MORETHAN")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("LESSTHAN")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("YEARS")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("MONTHS")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DAYS")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("MONTH")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DAY")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("YEAR")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("ANNUAL")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("SICK")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("RESTORED")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("MONTH2")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DAY2")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("YEAR2")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("HOURS_1")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("SICK_1")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("RESTORED_1")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("TOTALA")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("TOTALS")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("TOTALR")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("ANNUALREDUC")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("SICKREDUC")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("RESTOREDREDUC")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("TOTALTAKEN")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("TOTALLSICK")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("TOTALRESTORTED")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("BALANCEA")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("BALANCES")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("BALANCER")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("TOTALAHOURS")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("TOTALRHOURS")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("FROMMO")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("CTHRUMO")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("CFROM")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("BTHURMO")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("BFROMMO")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("ATHRUMO")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("AFROMMO")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("THURMO")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("FROMDAY")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("CTHRUDAY")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("CFROMDAY")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("BTHURDAY")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("BFROMDAY")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("ATHURDAY")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("AFROMDAY")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("THRUDAY")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("FROMYEAR")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("CTHRUYEAR")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("CFROMYEAR")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("BTHURYEAR")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("BFROMYEAR")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("ATHRUYEAR")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("AFROMYEAR")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("THRUYEAR")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("HOURS1")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("HOURS8")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("HOURS7")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("HOURS6")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("HOURS5")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("HOURS4")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("HOURS3")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("HOURS2")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("NumericField2")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("ABSENCEMONTH")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("ABSENCEDAY")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("ABSENCEYEAR")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("TOTALLWOPHOURS")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("STARTMONTH")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("STARTYEAR")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("STARTDAY")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("COMPLETEYEAR")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("COMPLETEDAY")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("COMPLETEDATE")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("BEGANMONTH")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("BEGANYEAR")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("BEGANDAY")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("ABSENTWOPAY")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("ACCRUALMONTH")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("ACCRUALYEAR")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("ACCURALDAY")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("NUMOFDAYS")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("ACCRUALSEPDAT")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATEFROMMO")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATETOYEAR4")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATETODAY4")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATETOMO4")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATEFROMYEAR4")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATEFROMDAY4")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATEFROMMO4")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATETOYEAR3")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATETODAY3")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATETOMO3")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATEFROMYEAR3")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATEFROMDAY3")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATEFROMMO3")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATETOYEAR2")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATETODAY2")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATETOMO2")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATEFROMYEAR2")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATEFROMDAY2")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATEFROMMO2")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATETOYEAR")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATETODAY")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATETOMO")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATEFROMYEAR")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("DATEFROMDAY")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("REGMO")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("TOREGYEAR")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("TOREGDAY")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("TOREGMO")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("REGYEAR")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("REGDAY")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("SPECIALMO")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("SPECIALYEAR2")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("SPECIALDAY2")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("SPECIALMO2")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("SPECIALYEAR")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("SPECIALDAY")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("REMARKS")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("TitleAgency")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("Date")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("NAME")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("SALARYRATE")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("Nature")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("TextField1")).Value.SetValue()
+fields.First(kvp => kvp.Key.Contains("SignatureField1")).Value.SetValue()

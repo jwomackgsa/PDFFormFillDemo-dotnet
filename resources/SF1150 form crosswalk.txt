@@ -2,7 +2,7 @@ Flat file name			Form box
 NAME 					Box 1
 SSN						Box 2
 BLOCK_CURR				Box 3
-SEP_DATENOA_DESC		Box 4
+SEP_DATENOA_DESC		Box 4  //Need Fields Separated if Possible
 PRIOR_LV_DATE_MM		Box 7 MO
 PRIOR_LV_DATE_DD		Box 7 DAY
 PRIOR_LV_DATE_YYYY		Box 7 YEAR
@@ -26,11 +26,11 @@ CURR_LY_ACCRUAL_RL		Box 8 Restored
 12_MTH_BEG_YYYY			Box 19 YEAR
 TOTAL_AL				Box 9 Annual
 TOTAL_SL				Box 9 Sick
-TOTAL_RS				Box9 Restored
+TOTAL_RS				Box 9 Restored
 REDUCT_AL				Box 10 Annual
-REDUCT_SL				Box 10 Sick
+REDUCT_SL				Box 10 Sick  //Missing Box 10 Restored?
 HRS_AWOL				Box 19 Hours
-TOT_LV_USED_AL			Box 11 Annual
+TOT_LV_USED_AL			Box 11 Annual //Something is up with this field
 TOT_LV_SED_SL			Box 11 Sick
 TOT_LV_USED_RS			Box 11 Restored
 CUR_BAL_DATE_MM			Box 20 MO

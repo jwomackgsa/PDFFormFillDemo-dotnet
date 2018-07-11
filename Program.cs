@@ -7,6 +7,7 @@ using iText.Kernel.Pdf;
 using System.Collections.Generic;
 using System.Linq;
 using ChoETL;
+using Newtonsoft.Json;
 
 namespace pdffillerdncore
 {
@@ -16,10 +17,13 @@ namespace pdffillerdncore
         {
             Console.WriteLine("Begin PDF Processing");
             //string srcPdf = @"resources\sf3101_template.pdf";  //Set template form as source
-            string srcPdf = @"resources\SF1150.pdf";  //Set template form as source
+            string srcPdf = @"resources\SF1150-77.pdf";  //Set template form as source
             string destPdf = @"output\mergedsf1150_" + DateTime.Now.ToString("MMddyyyyHHmmss") + ".pdf";  //Set named output pdf                
             
-            Program.discoverPDFFields(srcPdf);
+            var newpdf = new SF1150();
+            newpdf.GenerateSF1150(srcPdf,@"C:\DEV\pdfformfilldemo-dotnet\resources\par166p1.csv",destPdf);
+            
+            //Program.discoverPDFFields(srcPdf);
             //Program.testFillSF1150(srcPdf,destPdf);
             //Program.createPocoFromPDF(srcPdf);
             //Program.FixFieldNamesPDF(srcPdf);
@@ -28,7 +32,7 @@ namespace pdffillerdncore
             var recs = new ChoCSVReader<SF3101>(@"C:\DEV\pdffillerdncore\resources\sf3101_sample_data.csv").WithFirstLineHeader(); 
             byte[] result = createPdf(recs, srcPdf);  //Create multi-page pdf using the template for each record.
             File.WriteAllBytes(destPdf, result);  //Write the pdf in memory out to file.
-             */
+             */    
             Console.WriteLine("End PDF Processing");
         }
  
@@ -128,7 +132,8 @@ namespace pdffillerdncore
             foreach (var l in lines)  //Iterate through the fields to build the set value map
             {
                 //Console.WriteLine($"fields[\"{l}\"].SetValue();");
-                sw.WriteLine(l);
+                var fld = l.Replace("form1[0].#subform[0].","").Replace("[0]","");
+                sw.WriteLine($"fields.First(kvp => kvp.Key.Contains(\"{fld}\")).Value.SetValue()");
 
             }
             sw.Close();
