@@ -20,8 +20,8 @@ namespace pdffillerdncore
             string srcPdf = @"resources\SF1150-77.pdf";  //Set template form as source
             string destPdf = @"output\mergedsf1150_" + DateTime.Now.ToString("MMddyyyyHHmmss") + ".pdf";  //Set named output pdf                
             
-            var newpdf = new SF1150();
-            newpdf.GenerateSF1150(srcPdf,@"C:\DEV\pdfformfilldemo-dotnet\resources\par166p1.csv",destPdf);
+            var myclass = new SF1150();
+            myclass.GenerateSF1150(srcPdf,@"C:\DEV\pdfformfilldemo-dotnet\resources\par166p1_revised.csv",destPdf);
             
             //Program.discoverPDFFields(srcPdf);
             //Program.testFillSF1150(srcPdf,destPdf);
@@ -35,7 +35,7 @@ namespace pdffillerdncore
              */    
             Console.WriteLine("End PDF Processing");
         }
- 
+        
         private static byte[] createPdf(dynamic recs, string templatePdfFile)
         {
             // create clone page for each user in users
@@ -132,8 +132,10 @@ namespace pdffillerdncore
             foreach (var l in lines)  //Iterate through the fields to build the set value map
             {
                 //Console.WriteLine($"fields[\"{l}\"].SetValue();");
-                var fld = l.Replace("form1[0].#subform[0].","").Replace("[0]","");
-                sw.WriteLine($"fields.First(kvp => kvp.Key.Contains(\"{fld}\")).Value.SetValue()");
+                //Console.WriteLine(l);
+                sw.WriteLine(l);
+                //var fld = l.Replace("form1[0].#subform[0].","").Replace("[0]","");
+                //sw.WriteLine($"fields.First(kvp => kvp.Key.Contains(\"{fld}\")).Value.SetValue()");
 
             }
             sw.Close();

@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ChoETL.NETStandard" Version="1.0.1.6" />
+    <PackageReference Include="ChoETL.NETStandard" Version="1.0.1.8" />
     <PackageReference Include="itext7" Version="7.1.2" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>

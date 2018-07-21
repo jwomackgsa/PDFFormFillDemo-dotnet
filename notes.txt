@@ -14,3 +14,79 @@ using (var p = new ChoCSVReader(@"C:\DEV\pdffillerdncore\data.csv").WithFirstLin
     p.Read();
     Console.WriteLine(String.Join(", ", p.Context.Headers));
 }
+
+/* New Stuff */
+public void FillForm<T>(T rec, string templatePdfFile)
+{
+// var fields = 
+var fields = GetFormFieldsForTempalte(templatePdfFile);
+
+var properties = typeof(T).GetProperties().Where(x => x.GetCustomAttributes(typeof(PdfFieldAttribute)).Any());
+foreach (var prop in properties)
+{
+var attr = prop.GetCustomAttribute<PdfFieldAttribute>();
+if (!fields.TryGetValue(attr.FieldName, out var pdfField))
+continue;
+
+pdfField.SetValue(prop.GetValue(rec)?.ToString());
+}
+}
+
+public Dictionary<string, FieldStub> GetFormFieldsForTempalte(string templatePdfFile)
+{
+return new Dictionary<string, FieldStub>
+{
+{"some_field_name", new FieldStub{Name="the field i want to set"}}
+};
+}
+
+
+//Other Code
+var fields = new Dictionary<string, FieldStub>
+{
+{"some_field_name", new FieldStub{Name="the field i want to set"}}
+};
+
+var rec = new RecordStub { Foo = "some value i want to set"};
+FillForm(rec);
+}
+
+public void FillForm(RecordStub rec)
+{
+var fields = new Dictionary<string, FieldStub>
+{
+{"some_field_name", new FieldStub{Name="the field i want to set"}}
+};
+
+var properties = typeof(RecordStub).GetProperties().Where(x => x.GetCustomAttributes(typeof(PdfFieldAttribute)).Any());
+foreach (var prop in properties)
+{
+var attr = prop.GetCustomAttribute<PdfFieldAttribute>();
+if (!fields.TryGetValue(attr.FieldName, out var pdfField))
+continue;
+
+pdfField.SetValue(prop.GetValue(rec)?.ToString());
+}
+}
+
+public class FieldStub
+{
+public string Name{get;set;}
+public void SetValue(string value){
+$"setting [{Name}] with value [{value}]".Dump();
+}
+}
+
+public class RecordStub
+{
+[PdfFieldAttribute("some_field_name")]
+public string Foo{get;set;}
+}
+
+public class PdfFieldAttribute : Attribute
+{
+public string FieldName{ get; }
+public PdfFieldAttribute(string fieldName){
+FieldName = fieldName;
+}	
+}
