@@ -69,5 +69,24 @@ namespace pdffillerdncore
                 return memoryStream.ToArray();
             }
         }
+
+        private static void discoverPDFFields(string pdf)
+        {
+            PdfDocument pdfDoc = new PdfDocument(new PdfReader(pdf));
+            PdfAcroForm form = PdfAcroForm.GetAcroForm(pdfDoc, true);
+            StreamWriter sw = new StreamWriter(@"output\fields.txt");
+            var fields = form.GetFormFields();
+            var lines = fields.Select(kvp => kvp.Key);  //Grab PDF Fields from document
+            foreach (var l in lines)  //Iterate through the fields to build the set value map
+            {
+                //Console.WriteLine($"fields[\"{l}\"].SetValue();");
+                //Console.WriteLine(l);
+                sw.WriteLine(l);
+                //var fld = l.Replace("form1[0].#subform[0].","").Replace("[0]","");
+                //sw.WriteLine($"fields.First(kvp => kvp.Key.Contains(\"{fld}\")).Value.SetValue()");
+
+            }
+            sw.Close();
+        }
     }
 }

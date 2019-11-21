@@ -21,8 +21,10 @@ namespace pdffillerdncore
             string destPdf = @"output\mergedsf1150_" + DateTime.Now.ToString("MMddyyyyHHmmss") + ".pdf";  //Set named output pdf                
             
             var myclass = new SF1150();
-            myclass.GenerateSF1150(srcPdf,@"C:\DEV\pdfformfilldemo-dotnet\resources\par166p1_revised.csv",destPdf);
-            
+            myclass.GenerateSF1150(srcPdf,@"C:\DEV\PDFFormFillDemo-dotnet\resources\par166p1_revised.csv",destPdf);
+            //var myclass = new testClass();
+            //myclass.GenerateTest();
+
             //Program.discoverPDFFields(srcPdf);
             //Program.testFillSF1150(srcPdf,destPdf);
             //Program.createPocoFromPDF(srcPdf);
@@ -104,42 +106,7 @@ namespace pdffillerdncore
                 pdfDoc.Close();            
                 return memoryStream.ToArray();
             }
-        }
-
-        private static void testFillSF1150(string srcPdf, string outPdf)
-        {
-            PdfReader reader = new PdfReader(srcPdf); //Iput
-            PdfWriter writer = new PdfWriter(outPdf); //output
-            PdfDocument pdfDoc = new PdfDocument(reader, writer);
-            PdfAcroForm form = PdfAcroForm.GetAcroForm(pdfDoc, true);
-            var fields = form.GetFormFields();
-            //PdfFormField toSet;
-            
-            fields.First(kvp => kvp.Key.Contains("SSN")).Value.SetValue("111-22-3333");
-            fields.First(kvp => kvp.Key.Contains("NAME")).Value.SetValue("Doe, John, E");
-            form.FlattenFields();
-            pdfDoc.Close();      
-
-        }
-        
-        private static void discoverPDFFields(string pdf)
-        {
-            PdfDocument pdfDoc = new PdfDocument(new PdfReader(pdf));
-            PdfAcroForm form = PdfAcroForm.GetAcroForm(pdfDoc, true);
-            StreamWriter sw = new StreamWriter(@"output\fields.txt");
-            var fields = form.GetFormFields();
-            var lines = fields.Select(kvp => kvp.Key);  //Grab PDF Fields from document
-            foreach (var l in lines)  //Iterate through the fields to build the set value map
-            {
-                //Console.WriteLine($"fields[\"{l}\"].SetValue();");
-                //Console.WriteLine(l);
-                sw.WriteLine(l);
-                //var fld = l.Replace("form1[0].#subform[0].","").Replace("[0]","");
-                //sw.WriteLine($"fields.First(kvp => kvp.Key.Contains(\"{fld}\")).Value.SetValue()");
-
-            }
-            sw.Close();
-        }
+        }    
 
         private static void createPocoFromPDF(string pdf)
         {
